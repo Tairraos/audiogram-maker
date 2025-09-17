@@ -9,7 +9,6 @@ import {
   layoutText,
 } from "./get-number-of-lines-for-text";
 import { CAPTIONS_FONT_SIZE } from "./constants";
-import { FONT_FAMILY } from "./font";
 
 const useWindowedFrameCaptions = ({
   captions,

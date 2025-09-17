@@ -11,7 +11,6 @@ import {
   LINES_PER_PAGE,
 } from "./constants";
 import { Oscilloscope } from "./Oscilloscope";
-import { FONT_FAMILY } from "./font";
 import { WaitForFonts } from "./WaitForFonts";
 import { AudiogramCompositionSchemaType } from "./schema";
 
