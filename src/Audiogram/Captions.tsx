@@ -63,7 +63,7 @@ export const PaginatedCaptions: React.FC<{
     return layoutText({
       captions: currentSentence,
       textBoxWidth,
-      fontFamily: FONT_FAMILY,
+      fontFamily: "霞鹜文楷",
       fontSize: CAPTIONS_FONT_SIZE,
     });
   }, [currentSentence, textBoxWidth]);
@@ -79,6 +79,7 @@ export const PaginatedCaptions: React.FC<{
         position: "relative",
         overflow: "hidden",
         paddingBottom: "20px",
+        textAlign: "center",
       }}
     >
       <div ref={windowRef}>

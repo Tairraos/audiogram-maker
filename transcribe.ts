@@ -103,7 +103,7 @@ async function transcribeAudio(options: TranscriptionOptions) {
   }));
 
   fs.writeFileSync(
-    path.join(process.cwd(), "./public/captions.json"),
+    path.join(process.cwd(), "./public/captions.srt"),
     JSON.stringify(adjustedCaptions, null, 2),
   );
 

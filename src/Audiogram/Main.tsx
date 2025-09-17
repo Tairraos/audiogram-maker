@@ -52,7 +52,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
             color: "white",
             padding: "48px",
             backgroundColor: "black",
-            fontFamily: FONT_FAMILY,
+            fontFamily: "霞鹜文楷",
           }}
         >
           <div

@@ -19,12 +19,12 @@ export const RemotionRoot: React.FC = () => {
           audioOffsetInSeconds: 0,
           audioFileUrl: staticFile("audio.wav"),
           // podcast data
-          coverImageUrl: staticFile("podcast-cover.jpeg"),
-          titleText: "Ep 550 - Supper Club × Remotion React",
+          coverImageUrl: staticFile("logo.png"),
+          titleText: "职业卫生体检流程播客",
           titleColor: "rgba(186, 186, 186, 0.93)",
           // captions settings
           captions: null,
-          captionsFileName: staticFile("captions.json"),
+          captionsFileName: staticFile("captions.srt"),
           onlyDisplayCurrentSentence: true,
           captionsTextColor: "rgba(255, 255, 255, 0.93)",
           // visualizer settings
