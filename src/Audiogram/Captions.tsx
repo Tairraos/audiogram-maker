@@ -8,7 +8,7 @@ import {
   filterCurrentlyDisplayedLines,
   layoutText,
 } from "./get-number-of-lines-for-text";
-import { CAPTIONS_FONT_SIZE } from "./constants";
+import { CAPTIONS_FONT_SIZE, CAPTION_FONT } from "../constants";
 
 const useWindowedFrameCaptions = ({
   captions,
@@ -62,7 +62,7 @@ export const PaginatedCaptions: React.FC<{
     return layoutText({
       captions: currentSentence,
       textBoxWidth,
-      fontFamily: "霞鹜文楷",
+      fontFamily: CAPTION_FONT,
       fontSize: CAPTIONS_FONT_SIZE,
     });
   }, [currentSentence, textBoxWidth]);

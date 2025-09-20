@@ -6,12 +6,11 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { useWindowedAudioDataIfPossible } from "../helpers/use-windowed-audio-data-if-possible";
 
-const height = 120;
+const height = 125;
 const container: React.CSSProperties = {
-  overflow: "visible",
+  overflow: "hidden",
   height,
-  marginTop: 40,
-  marginBottom: 40,
+  margin: "22 0",
 };
 
 const OscilloscopeContainer: React.FC<{
@@ -90,7 +89,7 @@ export const Oscilloscope: React.FC<{
         strokeLinecap="round"
         fill="none"
         stroke={waveColor}
-        strokeWidth={10}
+        strokeWidth={6}
         d={p}
       />
     </OscilloscopeContainer>

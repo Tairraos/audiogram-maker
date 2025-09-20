@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { BASE_SIZE } from "./constants";
 
 export const AudioVizContainer: React.FC<{ children?: React.ReactNode }> = ({
   children,
@@ -8,11 +7,11 @@ export const AudioVizContainer: React.FC<{ children?: React.ReactNode }> = ({
     () => ({
       display: "flex",
       flexDirection: "row",
-      height: `${BASE_SIZE * 4}px`,
+      height: `125px`,
       alignItems: "center",
       justifyContent: "center",
-      gap: `${BASE_SIZE * 0.25}px`,
-      marginTop: `${BASE_SIZE}px`,
+      gap: `5px`,
+      margin: `22px 1px 25px`,
     }),
     [],
   );

@@ -4,7 +4,14 @@ import { audiogramSchema } from "./Audiogram/schema";
 import { getSubtitles } from "./helpers/fetch-captions";
 import { FPS } from "./helpers/ms-to-frame";
 import { parseMedia } from "@remotion/media-parser";
-
+import {
+  COVER_IMAGE_URL,
+  TITLE_COLOR,
+  TITLE_TEXT,
+  AUDIO_FILE_URL,
+  CAPTIONS_FILE_NAME,
+  CAPTIONS_TEXT_COLOR,
+} from "./constants";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -17,16 +24,16 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           // audio settings
           audioOffsetInSeconds: 0,
-          audioFileUrl: staticFile("audio.wav"),
+          audioFileUrl: staticFile(AUDIO_FILE_URL),
           // podcast data
-          coverImageUrl: staticFile("logo.png"),
-          titleText: "职业卫生体检流程播客",
-          titleColor: "rgba(186, 186, 186, 0.93)",
+          coverImageUrl: staticFile(COVER_IMAGE_URL),
+          titleText: TITLE_TEXT,
+          titleColor: TITLE_COLOR,
           // captions settings
           captions: null,
-          captionsFileName: staticFile("captions.srt"),
+          captionsFileName: staticFile(CAPTIONS_FILE_NAME),
           onlyDisplayCurrentSentence: true,
-          captionsTextColor: "rgba(255, 255, 255, 0.93)",
+          captionsTextColor: CAPTIONS_TEXT_COLOR,
           // visualizer settings
           visualizer: {
             type: "oscilloscope",
@@ -35,7 +42,7 @@ export const RemotionRoot: React.FC = () => {
             windowInSeconds: 0.1,
             posterization: 3,
             amplitude: 4,
-            padding: 50,
+            padding: 100,
           },
         }}
         // Determine the length of the video based on the duration of the audio file

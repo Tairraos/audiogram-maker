@@ -19,7 +19,7 @@ const oscilloscopeVisualizerSchema = baseVisualizerSchema.extend({
   windowInSeconds: z.number().min(0.1).default(0.1),
   posterization: z.number().int().min(0.1).default(3),
   amplitude: z.number().int().min(0.1).default(4),
-  padding: z.number().int().min(0).default(50),
+  padding: z.number().int().min(0).default(100),
 });
 
 const visualizerSchema = z.discriminatedUnion("type", [
